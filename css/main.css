@@ -1,0 +1,119 @@
+* {
+   box-sizing: border-box; 
+}
+/* General Styles */
+body {
+    background-color: darkslateblue;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 5px rgba(253, 4, 4, 0.945); /* Adding text shadow */
+    text-align: center; /* Center text in the body */
+    border: 3px solid #000000;
+    border-radius: 5px; /* Rounded corners */
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    text-shadow: 3px 3px 5px rgba(253, 4, 4, 0.945);
+}
+
+h3 {
+    color: lightsteelblue;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px auto;
+    text-align: left;
+    text-decoration-color: #000000;
+    color: cyan;
+    font-size: larger;
+}
+
+#pieces img {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    border: 3px solid rgb(0, 0, 0);
+    padding: 1em;
+    margin-right: 50px;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none; /* Remove underline */
+    color: rgba(0, 255, 115, 0.877); /* Link color */
+}
+
+/* Hover effect */
+a:hover {
+    color: #000000;
+    text-decoration: underline; /* Add underline on hover */
+}
+
+h4 {
+    text-align: center;
+}
+
+em {
+    color: ghostwhite;
+    font-size: larger;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    width: 90%; /* Width less than 100% */
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Centering the wrapper */
+    padding: 20px;
+    background-color: rgba(123, 1, 180, 0.651);
+    border: 3px solid black;
+}
+/* Flexbox Layout */
+
+/* Flex container for the main sections */
+main {
+    display: flex;
+    flex-direction: column; /* Arrange sections in a row */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    justify-content: space-between; /* Distribute space between sections */
+    gap: 10px; /* Add gaps between sections */
+    align-items: center; /* Align items in the center of the container */
+}
+
+/* Flex container for navigation */
+nav ul {
+    display: flex;
+    flex-direction: row; /* Align list items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Align items in the center vertically */
+    gap: 30px; /* Add spacing between list items */
+}
+
+/* Flexbox applied to sections */
+section {
+    flex-basis: 45%; /* Each section takes roughly half the available width */
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Add a subtle border */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background color */
+}
+/* Override styles for full-width images */
+#chess-image img {
+    width: 100%;
+}
