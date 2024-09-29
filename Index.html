@@ -117,12 +117,17 @@
         <!-- External Link to Wikipedia -->
         <p>For more information on chess strategy, visit the full article on <a href="https://en.wikipedia.org/wiki/Chess_strategy" target="_blank">Wikipedia</a>.</p>
         </section>
+        
         <!-- Contact Form Section -->
         <section id="contact">
             <h2>Contact Us</h2>
             <form action="https://example.com/submit" method="POST">
                 <!-- Single-line text field for Name -->
-                <label for="name">Name: </label>
+                <label for="First name">First Name: </label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+                <!-- Single-line text field for Name -->
+                <label for="Last name">Last Name: </label>
                 <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
 
                 <!-- Email field -->
@@ -135,7 +140,7 @@
 
                 <!-- Checkbox for consent -->
                 <label for="consent">
-                    <input type="checkbox" id="consent" name="consent" required> I agree to the terms and conditions.
+                    <input type="checkbox" id="consent" name="consent" required> Sign up for Emails
                 </label><br><br>
 
                 <!-- Submit button -->
