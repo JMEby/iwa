@@ -117,3 +117,51 @@ section {
 #chess-image img {
     width: 100%;
 }
+
+/* Contact form styles */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: white;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+/* Submit button styles */
+#submit-btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+#submit-btn:hover {
+    background-color: #007acc;
+    color: #fff;
+}

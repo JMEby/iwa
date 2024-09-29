@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Introduction to Chess</title>
     <!-- This is the HTML boilerplate -->
+    <script src="js/main.js" defer></script>
+    <!-- Linking external JavaScript file -->
 </head>
 <body>
     <div class="wrapper">
@@ -19,6 +21,8 @@
                 <li><a href="#rules">Rules</a></li>
                 <li><a href="#pieces">Pieces</a></li>
                 <li><a href="#strategies">Strategies</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <!-- Added contact section link -->
             </ul>
         </nav>
     </header>
@@ -112,6 +116,31 @@
 
         <!-- External Link to Wikipedia -->
         <p>For more information on chess strategy, visit the full article on <a href="https://en.wikipedia.org/wiki/Chess_strategy" target="_blank">Wikipedia</a>.</p>
+        </section>
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="https://example.com/submit" method="POST">
+                <!-- Single-line text field for Name -->
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+                <!-- Email field -->
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+                <!-- Multi-line text field for Message -->
+                <label for="message">Message: </label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required placeholder="Enter your message"></textarea><br><br>
+
+                <!-- Checkbox for consent -->
+                <label for="consent">
+                    <input type="checkbox" id="consent" name="consent" required> I agree to the terms and conditions.
+                </label><br><br>
+
+                <!-- Submit button -->
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
         </section>
     </main>
     </div>
